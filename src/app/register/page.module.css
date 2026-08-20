@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+.formCard {
+  background: var(--panel-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: var(--card-shadow);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.required {
+  color: #ef4444; /* red for asterisk */
+}
+
+.input {
+  background: var(--input-bg);
+  border: 1px solid var(--panel-border);
+  color: var(--text-main);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #9333ea; /* Purple focus from screenshot */
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.1);
+}
+
+.urlInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.urlInput {
+  background: var(--input-bg);
+  border: 1px solid var(--panel-border);
+  color: var(--text-main);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 60%; /* Adjust as needed */
+  box-sizing: border-box;
+}
+
+.urlInput:focus {
+  border-color: #9333ea;
+  border-width: 2px;
+  padding: 11px 15px; /* adjust for 2px border */
+}
+
+.urlSuffix {
+  margin-left: 8px;
+  color: var(--text-main);
+  font-size: 14px;
+}
+
+.passwordContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordInput {
+  width: 100%;
+  padding-right: 40px; /* space for icon */
+}
+
+.toggleVisibility {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+}
+.toggleVisibility:hover {
+  background: none;
+  box-shadow: none;
+  color: var(--text-main);
+}
+
+.submitBtn {
+  background: #310052; /* dark purple from screenshot */
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 24px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.submitBtn:hover {
+  background: #23003a;
+  box-shadow: 0 4px 12px rgba(49, 0, 82, 0.3);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: var(--danger);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.successText {
+  color: var(--success);
+  font-size: 14px;
+  margin-top: 12px;
+  text-align: center;
+}
